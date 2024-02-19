@@ -1,0 +1,30 @@
+body{
+    background-image: linear-gradient(to right,rgb(231, 248, 248),rgb(210, 242, 253),rgb(208, 228, 246));
+}
+*{
+    margin:0;
+    padding:0;
+}
+.img1{
+    width:400px;
+   margin:20px;
+   box-shadow: 5px 10px 6px gray;
+}
+.img2{
+    width:350px;
+    margin:20px;
+    box-shadow: 5px 10px 6px gray;
+}
+.img3{
+    width:350px;
+    margin:20px;
+    box-shadow: 5px 10px 6px gray;
+}
+p{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+em{
+    text-shadow: 1px  5px 6px gray;
+}

@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(to right,rgb(6, 6, 102),rgb(177, 158, 252),rgb(189, 192, 227));
+
+}
+*{
+    margin:0;
+    padding:0;
+}
+.cities{
+   
+   margin-top: 200px;
+   color: rgb(12, 10, 10);
+   margin-left: 400px;
+   margin-bottom: 200px;
+   margin-right: 400px;
+   list-style-position: inside;
+   font-size: 1.5rem;
+   border: 2px solid black;
+   padding:50px;
+   text-shadow: 6px 6px 6px rgb(232, 225, 225);
+   box-shadow: 6px 5px 6px rgb(7, 3, 3);
+   background-color:rgb(185, 185, 219);
+   border-radius: 20%;
+
+}
+.cities:hover{
+    transform:scale(1.1);
+}
