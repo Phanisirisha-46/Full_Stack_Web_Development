@@ -1,0 +1,60 @@
+body{
+    background-image: linear-gradient(to right,black,rgb(94, 94, 163), aqua); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+div img{
+    border-radius:50%;
+    box-shadow: 10px 6px 10px black;
+}
+audio
+{
+    
+    width: 300px;
+}
+video{
+    box-shadow: 10px 6px 10px black;
+    text-align: center;
+    width:200px;
+    margin-left: 50px;
+    border-radius:50%;
+}
+.heading1{
+    
+    font: weight 900px;;
+     font-size: 600;
+     font-style: italic;
+     color: rgb(249, 254, 254);
+     text-align: center;
+     text-decoration: underline;
+     text-shadow: 10px 10px 6px rgb(16, 10, 26);
+    
+ }
+ p{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    color: #f5f5f7;
+    text-align: center;
+}
+
+h2{
+    color: #faf9fc;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+#heading2
+{
+    color: rgb(246, 246, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    text-align: center;
+    font-size: medium;
+    font-weight: 100px;
+}
+
