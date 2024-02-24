@@ -3,3 +3,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: linear-gradient(to right, rgb(252, 214, 241),rgb(247, 244, 246),rgb(252, 214, 241));
+}
+.header ul{
+    list-style-type: none;
+    display:flex;
+    font-size: 1.3rem;
+    padding:20px;
+    gap:20px;
+    text-decoration:underline;
+    color: rgb(10, 13, 16);
+    text-shadow: 10px 10px 6px white;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 213, 233);
+}
+.h:hover{
+    transform: scale(1.1);
+    
+}
+.background{
+    display: flex;
+}
+.background .img1{
+    flex-grow: 1;
+}
+.background .img2{
+    flex-grow: 2;
+}
+.main .one{
+display: flex;
+justify-content: space-around;
+}
+.main .one .c1,.c2,.c3{
+    text-align:center;
+    border: 2px solid rgb(242, 95, 235);
+    padding:10px;
+    box-shadow: 5px 6px 10px rgb(188, 7, 100);
+    background-color: rgb(239, 218, 231);
+    border-radius: 20%;
+}
+.c1:hover{
+    transform: scale(1.1);
+}
+.c2:hover{
+    transform: scale(1.1);
+}
+.c3:hover{
+    transform: scale(1.1);
+}
+p{
+    text-align: center;
+    padding-top: 10px;
+}
+.c1 img{
+    border-radius: 30%;
+}
+.c2 img{
+    border-radius: 30%;
+}
+.c3 img{
+    border-radius: 30%;
+}
+.footer p{
+    text-align: right;
+    background-color: rgb(237, 213, 233);
+    color: rgb(10, 13, 16);
+    padding:20px;
+
+}
