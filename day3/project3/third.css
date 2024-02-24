@@ -1,0 +1,88 @@
+:root{
+    --colour-blue:rgb(0,48,87);
+    --padding-color:rgb(174, 237, 241);
+}
+body{
+    background-color: rgb(205, 237, 237);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color:var(--colour-blue);
+    background-color:var(--padding-color);
+    font-size: 1.5rem;
+    border:5.5px solid;
+    border-color: var(--color-blue);
+    border-radius: 10%;
+}
+
+h1{
+    color:var(--heading-color);
+}
+
+.third{
+    border:5px solid black;
+    width:100px;
+    height: 100px;
+    
+}
+table,th,td{
+   
+    border: 2px solid rgb(241, 242, 242);
+    /* to get lines collapse */
+    border-collapse: collapse;
+    padding: 10px;
+    border-color: rgb(253, 249, 249);
+}
+table{
+    color:var(--light-green);
+    background-color: rgb(4, 55, 97);
+    font-size: 1.5rem;
+    width:500px;
+    text-align: center;
+    margin:auto;
+}
+.forrm{
+    border:2px solid black;
+    margin:auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding:20px;
+    background-color: #a9f6dc;
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 10px;
+}
+
+.parent{
+    max-width:600px;
+    height:600px;
+    border:2px solid blue;
+    margin:auto;
+    /* add flex container */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.c1,.c2,.c3{
+    height:100px;
+    width:100px;
+   
+}
+.c1{
+    background-color: red;
+}
+
+.c2{
+    background-color: aquamarine;
+    align-self:start;
+}
+
+.c3{
+    background-color: bisque;
+}
