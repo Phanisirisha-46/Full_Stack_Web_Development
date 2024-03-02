@@ -23,5 +23,14 @@ I am here to start a fresh technology..
 <br>
 <br>
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment7/assignment7" target="_blank">Assignment 7</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment7_1/assignment7_1" target="_blank">Assignment 7_1</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment8/assignment8" target="_blank">Assignment 8</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment7/assignment9" target="_blank">Assignment 9</a>
 
   
