@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right, rgb(252, 214, 241),rgb(247, 244, 246),rgb(252, 214, 241));
+    background-image: linear-gradient(to right, rgb(244, 243, 244),rgb(247, 244, 246),rgb(239, 235, 238));
 }
 .header ul{
     list-style-type: none;
