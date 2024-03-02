@@ -31,6 +31,6 @@ I am here to start a fresh technology..
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment8/assignment8" target="_blank">Assignment 8</a>
 <br>
 <br>
-<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment7/assignment9" target="_blank">Assignment 9</a>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment9/assignment9" target="_blank">Assignment 9</a>
 
   
