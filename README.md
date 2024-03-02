@@ -20,6 +20,8 @@ I am here to start a fresh technology..
 <br>
 <br>
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment6/assign6" target="_blank">Assignment 6</a>
-
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment7/assignment7" target="_blank">Assignment 7</a>
 
   
