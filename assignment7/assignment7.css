@@ -10,7 +10,6 @@ table,th{
     border:5px solid rgb(253, 253, 253);
     border-collapse: collapse;
     padding:20px;
-    text-align: center;
     font-size: 2rem;
     background-color: rgba(4, 1, 18, 0.642);
     color: azure;
@@ -18,11 +17,12 @@ table,th{
     
 }
 td{
-    padding-left:40px;
-    padding-right: 40px;
+    text-align: center;
+    border:px solid white;
     padding-top: 10px;
     padding-bottom: 10px;
-    border:10px solid white;
+    padding-left: 100px;
+    padding-right:100px;
     
 }
 table{
@@ -32,3 +32,4 @@ table{
 .r{
     border-right: 1px solid rgb(243, 240, 240);
 }
+
