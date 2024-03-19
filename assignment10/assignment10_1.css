@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: red;
+}
+.Header{
+    display:flex;
+    gap:5px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.Header h2{
+color: red;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 70px;
+}
+.as{
+  width:5px;
+    height:5px;
+    margin-top: 25px;
+}
+.caret{
+    width:15px;
+    height:15px;
+    margin-top: 28px;
+    transform: rotate(90deg);
+}
+.head{
+    font-size: 3rem;
+    color:white;
+    font-family: "IBM Plex Sans Devanagari", sans-serif;   
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.c1{
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+color: white;
+opacity: 0.8;  
+ 
+}
+.bird{
+    max-width:190px;
+    width:100%;
+    margin-top: 70px;
+}
+.n{
+    margin-top: 70px;
+    width:90px;
+    height:80px;
+    border:1px solid black;
+   padding:15px;
+   border-radius: 50%;
+    font-size: small;
+    background-color: white;
+    box-shadow: 2px 4px 5px black;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+
+}
+.n:hover{
+    transform: scale(1.1);
+    }
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap:100px;
+}
+
+.down{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+}
+.box1,.box2,.box3{
+    background-color: black;
+    opacity:0.7;
+    color: white;
+   padding:40px;
+   padding-left: 65px;
+   z-index: 1;
+  
+}
+.title{
+    margin-left: 60px;
+    color: white;
+    text-shadow: 2px 3px 4px white;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top:55px;
+    z-index: 2;
+}
+
+.c2{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box1{
+    padding-bottom: 93px;
+}
+.box2{
+    padding-bottom: 75px;
+}
+.box3{
+    padding-bottom: 58px;
+}
+@media screen and (max-width:576px) {
+    .bird{
+        margin-left: 150px;
+        margin-top: -50px;
+    }
+
+  .down{
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+
+ .bird{
+       margin-left: 200px;
+       margin-top: -50px;
+   }
+   .n{
+    position: relative;
+    left:250px;
+    top:-70px;
+    
+}
+.down{
+    margin-left: 85px;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .bird{
+       margin-left: 290px;
+       margin-top: -50px;
+   }
+
+    
+    .n{
+        margin-right: 50px;
+    }
+
+    .down{
+        margin-left: 180px;
+    }
+    
+}
+
+
+
+
+
