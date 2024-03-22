@@ -88,6 +88,7 @@ opacity: 0.8;
     color: white;
    padding:40px;
    padding-left: 65px;
+  
    z-index: 1;
   
 }
@@ -108,13 +109,13 @@ opacity: 0.8;
 }
 
 .box1{
-    padding-bottom: 93px;
+    padding-bottom: 128px;
 }
 .box2{
-    padding-bottom: 75px;
+    padding-bottom: 110px;
 }
 .box3{
-    padding-bottom: 58px;
+    padding-bottom: 93px;
 }
 @media screen and (max-width:576px) {
     .bird{
