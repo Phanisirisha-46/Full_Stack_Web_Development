@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right,rgb(81, 230, 183),rgb(94, 159, 238));
+  
+    
+}
+.parent{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px 200px 200px 180px;
+    margin-top: 90px;
+    margin-left: 230px;
+  
+
+}
+.cen{
+    text-align: center;
+  
+   margin-top: 50px;
+}
+h2{
+    text-align: left;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    padding-left: 20px;
+}
+p{
+    text-align: justify;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+    padding-left: 20px;
+    line-height: 1.6;
+
+}
+
+.one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(47, 45, 45);
+}
+.one p{
+    position: relative;
+    bottom:10px;
+}
+.two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(83, 143, 228);
+}
+.three{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color:rgb(81, 230, 183);
+}
+.four{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: rgb(47, 45, 45);
+}
+.five{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: rgb(98, 100, 147);
+    padding-top: 140px;
+    padding-left: 25px;
+
+}
+.six{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: rgb(47, 45, 45);
+    padding:10px;
+   
+}
+.seven{
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: rgb(98, 100, 147);
+    padding-top: 140px;
+    padding-left: 5px;
+}
+   
+
+.eight{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgb(83, 143, 228);
+    padding-top: 20px;
+    
+    
+}
+.eight p{
+    position: relative;
+    bottom:10px;
+}
+.nine{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color:rgb(81, 230, 183);
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+img{
+    width:100px;
+    margin-left: 1100px;
+    margin-bottom: 100px;
+}
+
+a{
+    margin-left:420px;
+    padding:70px;
+    border:10px solid white;
+    border-radius: 50%;
+    background-color: rgb(223, 216, 216);
+    box-shadow: 2px 4px 6px black;
+}
+@media screen and (max-width:576px) {
+    .parent{
+        
+        grid-template-columns: 90px 90px 90px 90px 90px;
+        grid-template-rows: 100px 100px 100px 100px;
+        margin-top: 200px;
+        margin-left: 70px;
+}
+h2{
+    font-size: 10px;
+    text-align: center;
+    
+}
+p{
+    text-align: justify;
+    font-size: 8px;
+    padding-right: 2px;
+    padding-left: 2px;
+   
+}
+.cen{
+   margin-left: 1px;
+   position: relative;
+   bottom: 20px;
+}
+.seven{
+    padding-bottom: 50px;
+  
+}
+img{
+    width:40px;
+    margin-left:350px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+a{
+    font-size: 10px;
+    margin-left:200px;
+    padding:30px;
+    border:5px solid white;
+}
+.six h2{
+    padding-bottom: 2px;
+    padding-top: 5px;
+    position: relative;
+    bottom:10px;
+}
+.six p{
+    position: relative;
+    bottom:10px;
+
+}
+.seven{
+    padding:10px;
+    
+}
+.five{
+    padding:20px;
+}
+.five h2{
+    position: relative;
+    right:20px;
+}
+.eight p{
+    position: relative;
+    bottom:30px;
+    
+}
+.eight h2{
+    position: relative;
+    bottom:20px;
+    
+}
+.nine p{
+    position: relative;
+    bottom:30px;
+    
+}
+.nine h2{
+    position: relative;
+    bottom:20px;
+    
+}
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .parent{
+        grid-template-columns: 120px 120px 120px 120px 120px;
+        grid-template-rows: 100px 100px 100px 100px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 20px;
+        
+     }
+
+     h2{
+        font-size: 10px;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        font-size: 8px;
+        padding-right: 2px;
+        padding-left: 2px;
+       
+    }
+    .cen{
+      margin-left: 5px;
+      position: relative;
+      bottom: 20px;
+    }
+    .seven{
+        padding-bottom: 50px;
+      
+    }
+    img{
+        width:40px;
+        margin-left: 500px;
+        margin-bottom: 100px;
+    }
+    a{
+        font-size: 10px;
+        margin-left:200px;
+        padding:30px;
+        border:5px solid white;
+    }
+    .six h2{
+        padding-bottom: 2px;
+        padding-top: 5px;
+    }
+    .seven{
+        padding:20px;
+    }
+    .five{
+        padding:20px;
+    }
+    .eight p{
+        position: relative;
+        bottom:30px;
+        
+    }
+    .eight h2{
+        position: relative;
+        bottom:20px;
+        
+    }
+    .nine p{
+        position: relative;
+        bottom:30px;
+        
+    }
+    .nine h2{
+        position: relative;
+        bottom:20px;
+        
+    }
+    
+    }
+
+    
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    .parent{
+        grid-template-columns: 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px;
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 20px;
+        
+     }
+
+     h2{
+        font-size: 10px;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        font-size: 8px;
+        padding-right: 2px;
+        padding-left: 2px;
+       
+    }
+    .cen{
+        position: relative;
+        right:10px;
+        bottom: 20px;
+    }
+    .seven{
+        padding-bottom: 50px;
+      
+    }
+    img{
+        width:40px;
+        margin-left: 500px;
+        margin-bottom: 100px;
+    }
+    a{
+        font-size: 10px;
+        margin-left:200px;
+        padding:30px;
+        border:5px solid white;
+    }
+    .six h2{
+        padding-bottom: 2px;
+        padding-top: 5px;
+    }
+    .seven{
+        padding:20px;
+    }
+    .five{
+        padding:20px;
+    }
+    .eight p{
+        position: relative;
+        bottom:30px;
+        
+    }
+    .eight h2{
+        position: relative;
+        bottom:20px;
+        
+    }
+    .nine p{
+        position: relative;
+        bottom:30px;
+        
+    }
+    .nine h2{
+        position: relative;
+        bottom:20px;
+        
+    }
+    
+    }
+   
+
