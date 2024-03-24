@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.one ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:20px;margin-top: 20px;
+    margin-left: 40px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.one img{
+    width:30px;margin-top: -5px;
+}
+.second ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 400px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+li{
+    background-color:white;
+    padding: 6px;
+    border-radius: 5px;
+}
+li:hover{
+    background-color: #eaeea9;;
+}
+.l{
+    margin-left: 100px;
+    margin-top: -80px;
+    font-size: 1rem;
+   opacity: 0.5px;
+}
+.title{
+    margin-left: 30px;
+    font-size: 25px;
+    margin-top: 20px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p{
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.line{
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 1rem;
+   margin-top: 10px;
+   opacity: 0.5px;
+}
+
+.pic img{
+    width:600px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: left;
+   margin-top: -130px;
+    
+}
+a{
+    margin-left: 100px;
+    margin-top: 150px;
+
+}
+.in{
+    text-align: center;
+    font-size: 1rem;
+   opacity: 0.3px;
+   border: 1px solid black;  
+   padding: 10px;
+   padding-right: 140px;
+   position: relative;
+   bottom: 42px;
+}
+.inn{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1rem;
+   opacity: 0.3px;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   border: 1px solid black;
+   margin-left: 0px;
+
+}
+@media screen and (max-width:576px) {
+    .pic img{
+        width:380px;
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-left: 100px;
+    
+    }
+    .main{
+       position: relative;
+       right:40px;
+       
+    }
+  .in{
+    padding-right: 70px;
+  }
+
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    .pic img{
+        width:400px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 100px;
+    
+    }
+
+}
+
+    
+@media screen and (min-width:769px) and (max-width:992px) {
+    .main{
+        position: relative;
+        left: 80px;
+    }
+    .pic img{
+        width:550px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    
+    }
+}
