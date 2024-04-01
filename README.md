@@ -50,4 +50,10 @@ I am here to start a fresh technology..
 <br>
 <br>
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment11/assignment11_4" target="_blank">Assignment 11_4</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment12/assignment12" target="_blank">Assignment 12</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment13/assignment13" target="_blank">Assignment 13</a>
 
