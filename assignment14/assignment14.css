@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border:1px solid white;
+    box-shadow: 2px 4px 5px rgb(191, 187, 187);
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap:45px;
+    margin-top: 20px;
+    font-size: 1rem;
+
+}
+.nav{
+    color: black;
+}
+.in{
+    border-radius: 25px;
+    border: 2px solid rgb(7, 6, 8);
+    padding: 20px; 
+    width: 240px;
+    height: 15px;  
+    background-color: rgb(247, 247, 247);
+  
+}
+.login{
+    border:2px solid black;
+    padding:5px;
+}
+
+.signup
+{   background-color: black;
+    border:2px solid black;
+    padding:5px;
+    color: white;
+}
+img{
+    width:35px;
+}
+.c1{
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+    
+}
+.down{
+    position: absolute;
+    z-index: 1;
+}
+.verti{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-left: 30px;
+}
+.stars{
+    width:150px;
+}
+.do{
+    padding: 0;
+    margin: 0;
+}
+
+.c2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.c3 p{
+    font-size: 20px;
+}
+.c3{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.club{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+@media screen and (max-width:576px) {
+   .last{
+    max-width: 100%;
+   }
+   .udemy{
+    max-width: 100%;
+   }
+   .news{
+    max-width: 100%;
+
+   }
+   .u{
+    width:400px;
+   }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .last{
+        max-width: 100%;
+       
+       }
+       .udemy{
+        max-width: 100%;
+    
+       }
+       .news{
+        max-width: 100%;
+    
+       }
+    
+@media screen and (min-width:769px) and (max-width:992px) {
+    .last{
+        max-width: 100%;
+       }
+       .udemy{
+        max-width: 100%;
+    
+       }
+       .news{
+        max-width: 100%;
+    
+       }
+
+}
