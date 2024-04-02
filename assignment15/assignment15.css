@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border:1px solid white;
+    box-shadow: 2px 4px 5px rgb(191, 187, 187);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+
+}
+
+
+.p{
+    font-size: 3rem;
+}
+.pa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+span{
+    color: rgb(163, 160, 160);
+    font-size: 2rem;
+}
