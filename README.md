@@ -82,6 +82,18 @@ I am here to start a fresh technology..
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment20/assignment20" target="_blank">Assignment 20</a>
 <br>
 <br>
-<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment20/assignment20" target="_blank">Assignment 21</a>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment21/assignment21" target="_blank">Assignment 21</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment22/assignment22" target="_blank">Assignment 22</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment23/assignment23" target="_blank">Assignment 23</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment24/assignment24_1" target="_blank">Assignment 24_1</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment24/assignment24_2" target="_blank">Assignment 24_2</a>
 
 
