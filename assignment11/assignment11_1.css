@@ -3,9 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to right,rgb(81, 230, 183),rgb(94, 159, 238));
-  
-    
+    background-image: linear-gradient(to right,rgb(81, 230, 183),rgb(94, 159, 238)); 
 }
 .parent{
     display: grid;
