@@ -1,0 +1,15 @@
+.card-person{
+    background-color: rgb(186, 219, 224);
+    border-radius: 25px;
+    border: 2px solid rgb(41, 41, 1);
+    box-shadow: 10px 5px 5px black;
+    padding: 2px;
+    margin-bottom: 20px;
+    width:500px;
+    height: 400px;
+   
+}
+
+h2{
+    margin-left: 5px;
+}
