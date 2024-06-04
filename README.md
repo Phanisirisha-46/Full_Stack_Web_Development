@@ -98,5 +98,11 @@ I am here to start a fresh technology..
 <br>
 <br>
 <a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment25/assignment25" target="_blank">Assignment 25</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment25/assignment25_1" target="_blank">Assignment 25_1</a>
+<br>
+<br>
+<a href="https://phanisirisha-46.github.io/Full_Stack_Web_Development/assignment25/assignment25_2" target="_blank">Assignment 25_2</a>
 
 
