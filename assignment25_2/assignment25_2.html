@@ -3,59 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java SCRIPT - API AND DOM</title>
+    <title>Calculator</title>
     <style>
-        *{
-        margin: 0;
-        padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        h1{
-        color: white;
-        margin: auto;
-        text-align: center;
-        margin-top: 50px;
+        form {
+            border: 2px solid white;
+            padding: 20px;
+            margin-left: 400px;
+            width: 500px;
         }
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        input {
+            width: 200px;
+            height: 50px;
         }
-        img{
-            box-shadow: 5px 5px 5px white;
+        button {
+            width: 100px;
+            height: 40px;
         }
-        .result{
-            color: rgb(26, 24, 24);
+        h1 {
+            color: white;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            color: rgb(245, 245, 245);
         }
     </style>
 </head>
-<body style="background-color: rgb(230, 224, 224);">
-    
-    <h1>Welcome to  Javascript</h1>
+<body style="background-color: rgb(15, 14, 14);">
+    <h1>Welcome to JavaScript</h1>
     <br><br>
-    <form>
-        <input type="number" name="first" id="">
-        <input type="number" name="second" id="">
-        <button type="submit">Add</button>
-        <button type="submit">Subtract</button>
-        <button type="submit">Multiply</button>
-        <button type="submit">Modulus</button>
-        <button type="submit">Division</button>
-</form>
-        <h1 class="result"></h1>
-    <br><br>
-    <div class="row">
-        <div class="col">
-            <img src="../assets/card_api.png" alt="not available" style="width: 500px;">
-        </div>
-    </div>
-    <br><br>
-    <div class="row">
-        <div class="col">
-            <img src="../assets/table_api.png" alt="not available" style="width: 450px;">
-        </div>
-    </div>
-    <br><br>
+    <form id="calculator-form">
+        <input type="number" name="first">
+        <input type="number" name="second">
+        <br><br>
+        <button type="button" id="add">Add</button>
+        <br><br>
+        <button type="button" id="subtract">Subtract</button>
+        <br><br>
+        <button type="button" id="multiply">Multiply</button>
+        <br><br>
+        <button type="button" id="modulus">Modulus</button>
+        <br><br>
+        <button type="button" id="divide">Division</button>
+    </form>
+    <h1 class="result"></h1>
 
-<script src="assignment25_2.js"></script>  
-</body>
-</html>
+    <script src="assignment25_2.js"></script>
+</body
