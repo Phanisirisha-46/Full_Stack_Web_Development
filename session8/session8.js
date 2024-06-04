@@ -7,7 +7,7 @@ let person={
 let person1=JSON.stringify(person);
 console.log(person1);
 
-
+//api contact or creation
 function comments()
 {
     fetch('https://jsonplaceholder.typicode.com/photos')
