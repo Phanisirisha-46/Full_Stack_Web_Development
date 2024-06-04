@@ -55,7 +55,7 @@ h1.addEventListener('mousemove',()=>{
     h1.style.backgroundColor='green'
     h1.style.fontSize='4rem'
     h1.textContent='I love my mom';
-})
+});
 
 //increment counter
 
