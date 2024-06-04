@@ -1,0 +1,12 @@
+.card-product
+{
+    border: 4px solid rgb(35, 55, 86);
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(196, 252, 252);
+    box-shadow: 5px 5px 5px rgb(35, 55, 86); ;
+}
+.card-product:hover{
+    transform: scale(1.1);
+}
