@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:100px;
+    border: 2px 5px 5px white;
+    box-shadow: 2px 4px 3px rgb(145, 141, 141);
+    background-color: white;
+    padding-left :3px;
+    padding-right :100px;
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    
+}
+.logo{
+    display: flex;
+    gap:10px;
+    padding-right :500px;
+}

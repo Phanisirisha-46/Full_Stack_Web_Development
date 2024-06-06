@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px 5px 5px white;
+    box-shadow: 2px 4px 3px rgb(145, 141, 141);
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 151px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    box-shadow: 2px 5px 5px rgb(135, 133, 133);
+}
+li{
+    list-style: none;
+}
+h4{
+    text-shadow: 1px 1px rgb(167, 159, 159);
+}
