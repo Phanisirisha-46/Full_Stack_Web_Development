@@ -11,6 +11,9 @@ function Article(props) {
                 <div className='imagee'>
             <img src={props.pro.image} alt="" width="320px" />
             </div>
+            <div className='imageee'>
+            <img src={props.pro.more} alt="" width="70px" />
+            </div>
             <b className='title'>{props.pro.name}</b>
             <p>{props.pro.position}</p>
             <br />

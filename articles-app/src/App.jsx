@@ -3,6 +3,7 @@ import Article from "./assets/components/articles/Article";
 import Header from "./assets/components/header/Header";
 function App() {
   // state
+
   let pro1={
    
     image:"https://www.sureteam.co.uk/wp-content/uploads/2019/06/New_healthy_working_system.jpeg",
@@ -11,6 +12,7 @@ function App() {
     pic:"https://tse2.mm.bing.net/th?id=OIP.S4JCxRyXocxKC5vmxc7QCQHaE7&pid=Api&P=0&h=180",
     picc:"http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png",
     date:"Aug 12, 2020 04:32",
+    more:"https://tse3.mm.bing.net/th?id=OIP.GlIuUj-GYrRL_G8WvZ3YagHaHw&pid=Api&P=0&h=180",
 }
 let pro2={
   image:"https://www.shutterstock.com/image-illustration/white-word-blog-suspended-by-600nw-311525351.jpg",
@@ -19,6 +21,7 @@ let pro2={
   pic:"https://tse2.mm.bing.net/th?id=OIP.S4JCxRyXocxKC5vmxc7QCQHaE7&pid=Api&P=0&h=180",
   picc:"http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png",
   date:"Jul 10, 2020 10:59",
+  more:"https://tse3.mm.bing.net/th?id=OIP.GlIuUj-GYrRL_G8WvZ3YagHaHw&pid=Api&P=0&h=180",
   
 }
 let pro3={
@@ -30,6 +33,7 @@ let pro3={
    pic:"https://tse2.mm.bing.net/th?id=OIP.S4JCxRyXocxKC5vmxc7QCQHaE7&pid=Api&P=0&h=180",
    picc:"http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png",
    date:"Apr 04, 2020 08:46",
+   more:"https://tse3.mm.bing.net/th?id=OIP.GlIuUj-GYrRL_G8WvZ3YagHaHw&pid=Api&P=0&h=180",
 
 }
 

@@ -4,7 +4,8 @@
     border-radius: 14px;
     text-align: center;
     background-color: rgb(249, 252, 252);
-    box-shadow: 5px 5px 5px rgb(122, 119, 117); ;
+    box-shadow: 5px 5px 5px rgb(122, 119, 117);
+   
 }
 .card-product:hover{
     transform: scale(1.1);
@@ -36,4 +37,10 @@ li{
     font-size: 14px;
 
 
+}
+.imageee{
+    position: relative;
+    right:100px;
+    bottom:20px;
+   
 }
