@@ -6,7 +6,7 @@ import Login from './components/login/Login';
 import Users from './components/users/Users';
 import Registereduser from './components/Registeredusers/Registereduser';
 import Parent from './components/parent/Parent';
-import Managetasks from './components/tasks/Managetasks';
+
 import './App.css';
 
 function App() {
@@ -39,10 +39,6 @@ function App() {
         {
           path: 'parent',
           element: <Parent />
-        },
-        {
-          path: 'managetasks',
-          element: <Managetasks />
         }
       ]
     }
