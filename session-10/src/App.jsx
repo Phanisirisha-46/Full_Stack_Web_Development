@@ -4,6 +4,9 @@ import Home from './components/home/Home';
 import Register from './components/register/Register';
 import Login from './components/login/Login';
 import Users from './components/users/Users';
+import Registereduser from './components/Registeredusers/Registereduser';
+import Parent from './components/parent/Parent';
+import Managetasks from './components/tasks/Managetasks';
 import './App.css';
 
 function App() {
@@ -28,6 +31,18 @@ function App() {
         {
           path: 'users',
           element: <Users />
+        },
+        {
+          path: 'Registeredusers',
+          element: <Registereduser />
+        },
+        {
+          path: 'parent',
+          element: <Parent />
+        },
+        {
+          path: 'managetasks',
+          element: <Managetasks />
         }
       ]
     }
@@ -35,6 +50,7 @@ function App() {
 
   return (
     <RouterProvider router={browserRouter} />
+
   );
 }
 

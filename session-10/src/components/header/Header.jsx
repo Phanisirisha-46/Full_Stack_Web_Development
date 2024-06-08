@@ -17,6 +17,12 @@ function Header() {
         <li className='nav-item'>
           <Link to="users" className='nav-link text-white'>Users</Link>
         </li>
+        <li className='nav-item'>
+          <Link to="parent" className='nav-link text-white'>Parent</Link>
+        </li>
+        <li className='nav-item'>
+          <Link to="managetasks" className='nav-link text-white'>Manage Tasks</Link>
+        </li>
       </ul>
     </div>
   );

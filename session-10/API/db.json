@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "8e6a",
+      "username": "veera",
+      "password": "123",
+      "email": "veerankiphanisirisha@gmail.com"
+    },
+    {
+      "id": "8d76",
+      "username": "summu",
+      "password": "345",
+      "email": "veerankiphanisirisha@gmail.com"
+    },
+    {
+      "id": "3e37",
+      "username": "vey",
+      "password": "236",
+      "email": "veerankiphanisirisha@gmail.com"
+    },
+    {
+      "id": "94ee",
+      "username": "sir",
+      "password": "789",
+      "email": "veerankiphanisirisha@gmail.com"
+    },
+    {
+      "id": "d83c",
+      "username": "tri",
+      "password": "tt6",
+      "email": "veerankiphanisirisha@gmail.com"
+    }
+  ],
+  "posts": []
+}
