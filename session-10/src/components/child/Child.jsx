@@ -5,7 +5,7 @@ function Child(props){
     return(
         <div className="bg-warning p-4">
             <h2>Child</h2>
-            <h3>Counetr in Child -{props.data.counter}</h3>
+            <h3>Counter in Child -{props.data.counter}</h3>
             <button className="btn btn-light m-4"
             onClick={props.data.changecounter}>
                 Change
