@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "904b",
+      "username": "siri",
+      "date": "2024-06-08",
+      "city": "Kurnool"
+    },
+    {
+      "id": "4430",
+      "username": "vihay",
+      "date": "2024-05-28",
+      "city": "Vizag"
+    },
+    {
+      "id": "a9d6",
+      "username": "sara",
+      "date": "2024-06-13",
+      "city": "Chitoor"
+    }
+  ],
+  "posts": []
+}
