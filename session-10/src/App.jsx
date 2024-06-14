@@ -7,7 +7,12 @@ import Users from './components/users/Users';
 import Registereduser from './components/Registeredusers/Registereduser';
 import Parent from './components/parent/Parent';
 import Managetasks from './components/tasks/Managetasks';
-
+import Userdetails from './components/user-details/Userdetails';
+import Tech from './components/technologies/Tech';
+import Java from './components/java/Java';
+import Node from './components/node/Node';
+import Vue from './components/vue/Vue';
+import Userdash from './components/userdash/Userdash';
 import './App.css';
 
 function App() {
@@ -34,6 +39,11 @@ function App() {
           element: <Users />
         },
         {
+          path: 'users/:userId',  // ":" -  if we keep then we take as parameter the userid
+          element: <Userdetails/>
+        },
+
+        {
           path: 'Registeredusers',
           element: <Registereduser />
         },
@@ -44,7 +54,30 @@ function App() {
         {
           path: 'managetasks',
           element: <Managetasks />
-        }
+        },
+        {
+          path: 'userdash',
+          element: <Userdash />
+        },
+        {
+          path: 'tech',
+          element: <Tech />,
+          children:[
+            {
+              path: 'java',
+          element: <Java />
+            },
+            {
+              path: 'node',
+          element: <Node />
+            },
+            {
+              path: 'vue',
+          element: <Vue />
+            }
+          ]
+        },
+     
       ]
     }
   ]);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 function Users() {
   let [users, setUsers] = useState([]);
 
@@ -16,26 +16,12 @@ function Users() {
   return (
     <div>
       <h1 className='text-center mb-5 mt-5'>Users</h1>
-      <table className='table table-bordered'>
-        <thead className='table-dark'>
-          <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>USERNAME</th>
-            <th>EMAIL</th>
-          </tr>
-        </thead>
-        <tbody >
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.username}</td>
-              <td>{user.email}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      {
+        users.map((userObj)=> (<p>
+          <Link key={userObj.id}
+           to={`/users/${userObj.id}`}  state={{user:userObj}}>{userObj.username} </Link>
+          </p>))
+      }
     </div>
   );
 }

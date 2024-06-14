@@ -1,10 +1,15 @@
 
+import { useContext } from "react";
+import { sampleContext } from "../../contexts/testContext";
+
 
 function Home() {
+  let {a,setA} = useContext(sampleContext);
   return (
     <div className='text-center'>
-      <h1>Welcome to App</h1>
      
+      <h1>Welcome to App</h1>
+      <h2>{a}</h2>
       <p className="lead">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum
         tempora error? Unde hic consequatur tempora voluptate eum in numquam
