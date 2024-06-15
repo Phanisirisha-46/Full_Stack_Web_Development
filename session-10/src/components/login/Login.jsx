@@ -4,10 +4,11 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useContext } from "react";
 import { sampleContext } from "../../contexts/testContext";
+import {usersContext} from '../../contexts/usersContext';
 
 
 function Login() {
-    let {a,setA} = useContext(sampleContext);
+    let {b,setB} = useContext(sampleContext);
 
 
 
@@ -26,10 +27,14 @@ function Login() {
         }
 
     }
+    let {users,setUsers}=useContext(usersContext);
   return (
+    
     <div>
         <h1>Login</h1>
-        <h2>{a}</h2>
+        <h2>{b}</h2>
+        <button className="btn btn-success" onClick={()=>setB(b+1)}>Change the state</button>
+        <h5>{users[0].username}</h5>
         {usercred.length!==0&& <p className='fs-3 text-danger text-center'>{usercred}</p>  }
         <form className='w-50 mx-auto mt-5 bg-light p-4' onSubmit={handleSubmit(handlesubmission)}>
             <div className='mb-3'>
