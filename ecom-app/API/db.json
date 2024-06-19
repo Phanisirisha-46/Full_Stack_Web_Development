@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "d8ee",
+      "username": "veera",
+      "password": "2346",
+      "email": "veerankiphanisirisha@gmail.com",
+      "mobile": "9494381636",
+      "profileImage": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+    },
+    {
+      "id": "1713",
+      "username": "siri",
+      "password": "2365",
+      "email": "veerankiphanisirisha@gmail.com",
+      "mobile": "9642317897",
+      "profileImage": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+    },
+    {
+      "id": "629d",
+      "username": "siris",
+      "password": "345",
+      "email": "veerankiphanisirisha@gmail.com",
+      "mobile": "6303032106",
+      "profileImage": "https://tse2.mm.bing.net/th?id=OIP.jryuUgIHWL-1FVD2ww8oWgHaHa&pid=Api&P=0&h=180"
+    }
+  ]
+}
