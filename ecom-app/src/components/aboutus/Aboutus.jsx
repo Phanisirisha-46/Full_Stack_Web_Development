@@ -5,6 +5,7 @@ function Aboutus() {
   return (
     <div>
       <p className="lead">
+        <br />
       Imagine stepping into a bustling shopping mall, where the air is filled with a symphony of chatter, laughter, and the faint scent of freshly brewed coffee. The entrance welcomes you with expansive glass doors that lead into a spacious atrium, adorned with vibrant banners and digital screens announcing the latest sales and events. The ceiling, a lofty expanse of skylights and modern lighting fixtures, bathes the scene in a soft, ambient glow.
 
 As you wander deeper into the mall, you're surrounded by a myriad of shops and boutiques, each offering its own unique array of goods. Fashion outlets beckon with the latest trends in window displays that change with the seasons, while electronics stores showcase cutting-edge gadgets and devices that dazzle with their sleek designs. The hum of activity is punctuated by the occasional sound of a cash register and the rustle of shopping bags as patrons eagerly explore the offerings.
