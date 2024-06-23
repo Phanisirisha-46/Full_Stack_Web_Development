@@ -7,20 +7,29 @@ function Product(props) {
   let productObj=props.productObj;
   let {currentUser}=useContext(userLoginContext)
 
-
+  //error state
+  let [err, setErr] = useState("");
   async function addProductToCart(productObj){
     //add current user data to productObj
-    productObj.username=currentUser.username;
-    let res=await fetch('http://localhost:3000/user-cart',{
-      method:"POST",
-      headers: { "Content-type": "application/json" },
-      body:JSON.stringify(productObj)
-    })
-    
-    console.log(res)
-    if(res.status===201){
-      console.log("product added to cart")
-    }  
+    try{
+      productObj.username=currentUser.username;
+      let res=await fetch('http://localhost:3000/user-cart',{
+        method:"POST",
+        headers: { "Content-type": "application/json" },
+        body:JSON.stringify(productObj)
+      })
+      
+      console.log(res)
+      if(res.status===201){
+        console.log("product added to cart")
+      }  
+
+    }
+    catch (err) {
+      console.log("err is ", err);
+      setErr(err.message);
+    }
+   
   }
 
   return (

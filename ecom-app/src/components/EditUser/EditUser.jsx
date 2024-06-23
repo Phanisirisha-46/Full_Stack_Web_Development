@@ -4,12 +4,15 @@ import { useContext } from 'react';
 import { userLoginContext } from '../../contexts/userLoginContext';
 import { Navigate, useNavigate } from 'react-router-dom';
 function EditUser() {
-    let {register,handleSubmit,setValue}=useForm()
+    let {register,handleSubmit,setValue, formState: { errors }}=useForm()
     let {currentUser,setCurrentUser}=useContext(userLoginContext)
     let navigate=useNavigate();
+     //error state
+  let [err, setErr] = useState("");
 
    async  function  onSave(modifiedUser)
     {
+      try{
         console.log(modifiedUser)
         let res=await fetch (`http://localhost:3000/users/${currentUser.id}`,{
             method:"PUT",
@@ -23,6 +26,13 @@ function EditUser() {
             setCurrentUser(modifiedUser)
             navigate("/user-profile");
           }
+
+      }
+      catch (err) {
+        console.log("err is ", err);
+        setErr(err.message);
+      }
+       
     }
 
 
@@ -47,9 +57,15 @@ function EditUser() {
               type="text"
               id="username"
               className="form-control"
-              {...register("username")} //value is attribute
+              {...register("username",{ required: true })} //value is attribute
               value={setValue('username',currentUser.username)}
+            
             />
+               {/* validation error message on username */}
+               {errors.username?.type === "required" && (
+                <p className="text-danger lead">*Username is required</p>
+              )}
+
            
           </div>
           {/* password */}
@@ -79,6 +95,10 @@ function EditUser() {
               {...register("email", { required: true })}
               value={setValue('email',currentUser.email)}
             />
+              {/* validation error message on email */}
+              {errors.email?.type === "required" && (
+                <p className="text-danger lead">*Email is required</p>
+              )}
            
           </div>
           {/* mobileno */}
@@ -93,6 +113,10 @@ function EditUser() {
               {...register("mobile", { required: true })}
               value={setValue('mobile',currentUser.mobile)}
             />
+                 {/* validation error message on mobile */}
+                 {errors.mobile?.type === "required" && (
+                <p className="text-danger lead">*Mobile no is required</p>
+              )}
             
           </div>
           {/* profile img */}

@@ -4,11 +4,21 @@ import Product from "../product/Product";
 
 function Products() {
   let [products, setProducts] = useState([]);
-
+  //error state
+  let [err, setErr] = useState("");
   async function getProducts() {
-    let res = await fetch("http://localhost:3000/products");
-    let productsData = await res.json();
-    setProducts(productsData);
+    try{
+      let res = await fetch("http://localhost:3000/products");
+      let productsData = await res.json();
+      setProducts(productsData);
+
+    }
+    catch (err) {
+      console.log("err is ", err);
+      setErr(err.message);
+    }
+
+ 
   }
 
   useEffect(() => {

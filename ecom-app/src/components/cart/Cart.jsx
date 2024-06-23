@@ -8,22 +8,38 @@ import "./Cart.css";
 function Cart() {
   let { currentUser } = useContext(userLoginContext);
   let [cartItems, setCartItems] = useState([]);
-
+  let [err, setErr] = useState("");
   // get products from cart
   async function getProductsOfUserCart() {
-    let res = await fetch(
-      `http://localhost:3000/user-cart?username=${currentUser.username}`
-    );
-    console.log(res);
-    let cartItemsList = await res.json();
-    setCartItems(cartItemsList);
+    try{
+      let res = await fetch(
+        `http://localhost:3000/user-cart?username=${currentUser.username}`
+      );
+      console.log(res);
+      let cartItemsList = await res.json();
+      setCartItems(cartItemsList);
+
+    } catch(err)
+    {
+      console.log("err is ", err);
+      setErr(err.message);
+    }
   }
 //delete product from cart
 async function deletepro(proid)
 {
-  let res=await fetch(`http://localhost:3000/user-cart/${proid}`,{method:"DELETE"})
-  console.log(res);
-  getProductsOfUserCart()
+  try{
+    let res=await fetch(`http://localhost:3000/user-cart/${proid}`,{method:"DELETE"})
+    console.log(res);
+    getProductsOfUserCart()
+
+  }
+  catch(err)
+  {
+    console.log("err is ", err);
+    setErr(err.message);
+  }
+
 }
   useEffect(() => {
     getProductsOfUserCart();
