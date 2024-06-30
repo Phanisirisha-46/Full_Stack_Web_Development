@@ -1,0 +1,31 @@
+//sending requests
+
+get http://localhost:3500/products
+
+####
+get  http://localhost:3500/products/10
+
+####
+put   http://localhost:3500/product
+Content-Type: application/json
+
+{
+    "pid":10,
+    "name":"laptop",
+    "company":"amazon",
+    "cost":30000
+}
+###
+post    http://localhost:3500/product
+Content-Type: application/json
+
+{
+    "pid":90,
+    "name":"lapi",
+    "company":"amazon",
+    "cost":40000
+    
+}
+
+###
+delete http://localhost:3500/product/10

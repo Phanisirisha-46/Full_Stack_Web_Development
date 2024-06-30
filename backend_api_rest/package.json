@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "backend_api_rest",
   "version": "1.0.0",
-  "description": "a small backend demo",
-  "main": "server.js",
+  "description": "backend own",
+  "main": "product_serve.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
