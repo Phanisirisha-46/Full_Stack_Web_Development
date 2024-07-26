@@ -1,28 +1,72 @@
 get http://localhost:4000/user-api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidmFpc2giLCJpYXQiOjE3MjE5NzIyNzAsImV4cCI6MTcyMTk3NTg3MH0.QPfDLsXerremSVj0O7d7pu2VkAaZFHC-GA9oOL5Yuzc
+
 
 ###
 get http://localhost:4000/user-api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzIwODYwNzg5LCJleHAiOjE3MjA4NjQzODl9.MSt3gofLtyQpY26O293HkMGc3iG9IHHd_7_Az5RTY1Y
 
 ###
-
-post http://localhost:4000/user-api/user 
+post http://localhost:4000/user-api/user
 Content-Type: application/json
 
 {
-    "id":3,
-    "name":"madhu"
+    "id":5,
+    "username":"vaishnavi",
+    "password":"vaishu",
+    "products":[]
+    
+
 }
+
+
+
+###
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "id":5,
+    "name":"vaish",
+    "password":"vaishu"
+}
+
 
 ###
 put http://localhost:4000/user-api/user
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzIwODYwNzg5LCJleHAiOjE3MjA4NjQzODl9.MSt3gofLtyQpY26O293HkMGc3iG9IHHd_7_Az5RTY1Y
 
 {
     "id":1,
-    "name":"ravi kumar"
+    "name":"Ravi kumar"
 }
+
 
 ###
 delete http://localhost:4000/user-api/user/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFtIiwiaWF0IjoxNzIwODYwNzg5LCJleHAiOjE3MjA4NjQzODl9.MSt3gofLtyQpY26O293HkMGc3iG9IHHd_7_Az5RTY1Y
+
+
 ###
-get http://localhost:4000/product-api/products
+GET http://localhost:4000/product-api/products
+
+###
+GET http://localhost:4000/product-api/products/20
+
+###
+PUT http://localhost:4000/user-api/add-to-cart/vaishnavi
+Content-Type: application/json
+
+{
+    "products":{
+        "id":1,
+        "title":"Essence Mascara Lash Prince",
+        "description":"The Essecence Mascara",
+        "category":"beauty",
+        "price":9.99
+    }
+}
+
+
+

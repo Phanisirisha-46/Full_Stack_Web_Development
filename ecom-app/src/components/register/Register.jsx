@@ -18,7 +18,7 @@ function Register() {
   //on user submit
   async function onUserRegister(newUser) {
     try {
-      let res = await fetch("http://localhost:3000/users", {
+      let res = await fetch("http://localhost:4000/user-api/user", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(newUser),
@@ -27,6 +27,7 @@ function Register() {
       if (res.status === 201) {
         //navigate to Login component
         navigate("/login");
+        
       }
     } catch (err) {
       console.log("err is ", err);
