@@ -7,25 +7,39 @@ function UserLoginStore({ children }) {
   //login user state
   let [currentUser, setCurrentUser] = useState(null);
   let [userLoginStatus,setUserLoginStatus]=useState(false)
+  let [err, setErr] = useState("");
 
   //user login
   async function loginUser(userCred) {
+    try{
     let res = await fetch(
-      `http://localhost:3000/users?username=${userCred.username}&password=${userCred.password}`
+      'http://localhost:4000/user-api/login',
+      {
+        method: "POST",
+        headers: { "Content-type": "application/json" ,},
+        body: JSON.stringify(userCred),
+      }
     );
-    let usersList = await res.json();
-    console.log("users list",usersList)
-    if (usersList.length === 0) {
-      //invalid credentials
-      console.log("invalid user")
-      setCurrentUser(null)
-      setUserLoginStatus(false)
-     
-    } else {
-      setCurrentUser(usersList[0]);
+    console.log(res);
+    let result = await res.json();
+    console.log(result.user);
+    if(result.message === 'user login successfully'){
+    
+      setCurrentUser(result.user)
       setUserLoginStatus(true)
-      
+     setErr('')
+      //to save token in session storage
+    sessionStorage.setItem('token',result.token)
     }
+    
+    else {
+      setErr(result.message);
+      setCurrentUser({})
+      setUserLoginStatus(false)
+  }
+} catch (error) {
+  setErr(error.message);
+}
   }
 
   //user logout
@@ -33,10 +47,14 @@ function UserLoginStore({ children }) {
     //reset state
     setCurrentUser({});
     setUserLoginStatus(false);
+    setErr('') 
+    //to remove token in session storage
+    sessionStorage.removeItem('token')
+
   }
 
   return (
-    <userLoginContext.Provider value={{ loginUser,logoutUser,userLoginStatus ,currentUser,setCurrentUser}}>
+    <userLoginContext.Provider value={{ loginUser,logoutUser,err,userLoginStatus ,currentUser,setCurrentUser}}>
       {children}
     </userLoginContext.Provider>
   );

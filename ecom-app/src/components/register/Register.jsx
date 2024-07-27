@@ -23,12 +23,17 @@ function Register() {
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(newUser),
       });
+      let data = await res.json()
 
-      if (res.status === 201) {
-        //navigate to Login component
-        navigate("/login");
-        
-      }
+
+     if(data.message === 'user created')
+     {
+      //navigate to login component
+      navigate("/login");
+     }
+     else{
+      setErr(data.message)
+     }
     } catch (err) {
       console.log("err is ", err);
       setErr(err.message);

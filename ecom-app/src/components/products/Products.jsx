@@ -8,9 +8,10 @@ function Products() {
   let [err, setErr] = useState("");
   async function getProducts() {
     try{
-      let res = await fetch("http://localhost:3000/products");
+      let res = await fetch("http://localhost:4000/product-api/products");
       let productsData = await res.json();
-      setProducts(productsData);
+      console.log(productsData)
+      setProducts(productsData.payload);
 
     }
     catch (err) {

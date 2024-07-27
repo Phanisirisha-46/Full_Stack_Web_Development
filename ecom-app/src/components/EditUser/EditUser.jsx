@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import { useContext } from 'react';
+import { useState } from 'react';
 import { userLoginContext } from '../../contexts/userLoginContext';
 import { Navigate, useNavigate } from 'react-router-dom';
 function EditUser() {
@@ -14,7 +15,7 @@ function EditUser() {
     {
       try{
         console.log(modifiedUser)
-        let res=await fetch (`http://localhost:3000/users/${currentUser.id}`,{
+        let res=await fetch (`http://localhost:4000/users/${currentUser.username}`,{
             method:"PUT",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(modifiedUser),

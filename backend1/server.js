@@ -1,28 +1,29 @@
 const exp=require('express')
 const app=exp()
 
-
+const cors=require('cors');
+app.use(cors({
+    origin:"http://localhost:5173"
+}))
 const userApp=require('./APIs/userApi')
 const productApp=require('./APIs/productApi')
 
 app.use('/product-api',productApp)
 app.use('/user-api',userApp)
+
 app.use('*',(req,res,next)=>{
     console.log(req)
     res.send({message:"Invalid path"})
 })
 
 app.use((err,req,res,next)=>{
-    res.send({message:"Error-occurred",errorMessag:err.message})
+    res.send({message:"Error-occurred",errorMessage:err.message})
 })
 
 
 require('dotenv').config()// process.env.secret_key
 
-const cors=require('cors');
-app.use(cors({
-    origin:"http://localhost:5173"
-}))
+
 
 const {MongoClient}=require('mongodb') //127.0.0.1 is ip adddress, 27017 is db port number
 let mClient=new MongoClient(process.env.db_url)

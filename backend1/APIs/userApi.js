@@ -17,10 +17,10 @@ userApp.get('/users',tokenVerify,expressAsyncHandler(async (req,res)=>{
 }))
 
 
-userApp.get('/users/:id',tokenVerify,expressAsyncHandler(async (req,res)=>{
+userApp.get('/users/:username',tokenVerify,expressAsyncHandler(async (req,res)=>{
     const usersCollection=req.app.get('usersCollection')
-    let idOfUrl=Number(req.params.id)
-    let userSearch=await usersCollection.findOne({id:{$eq:idOfUrl}})
+    let idOfUrl=(req.params.username)
+    let userSearch=await usersCollection.findOne({username:{$eq:idOfUrl}})
         res.send({message:'User found',payload:userSearch})
     
 }))
@@ -30,14 +30,16 @@ userApp.get('/users/:id',tokenVerify,expressAsyncHandler(async (req,res)=>{
 userApp.post('/user',expressAsyncHandler(async (req,res)=>{
     const usersCollection=req.app.get('usersCollection')
     const serachUser= req.body
-    let user_exist=await usersCollection.findOne({name:{$eq:serachUser.name}})
+    console.log(serachUser)
+    let user_exist=await usersCollection.findOne({username:{$eq:serachUser.username}})
+    
     if(user_exist!==null)
     {    res.send({message:"user already exist"}) }
     else
     {
         let hashpass=await bcryptjs.hash(serachUser.password,5)
         serachUser.password=hashpass
-        searchUser.products=[]
+        serachUser.products=[]
         await usersCollection.insertOne(serachUser)
         res.send({message:"New user created"})
     } 
@@ -46,7 +48,7 @@ userApp.post('/user',expressAsyncHandler(async (req,res)=>{
 userApp.post('/login',expressAsyncHandler(async(req,res)=>{
     const usersCollection=req.app.get('usersCollection')
     let login_user=req.body
-    let user_db=await usersCollection.findOne({name:login_user.name})
+    let user_db=await usersCollection.findOne({username:login_user.username})
     if(user_db===null)
     {
         res.send({message:"Invalid username"})
@@ -60,7 +62,7 @@ userApp.post('/login',expressAsyncHandler(async(req,res)=>{
         }
         else
         {
-                let signedToken=jwt.sign({name:login_user.name},process.env.secret_key,{expiresIn:'1h'}) // to not to identify the key create env - environment variables..
+                let signedToken=jwt.sign({username:login_user.username},process.env.secret_key,{expiresIn:'1h'}) // to not to identify the key create env - environment variables..
                 res.send({message:"user login successfully",token:signedToken,user:user_db})
         }
     }
@@ -95,6 +97,45 @@ userApp.delete('/user/:id',tokenVerify,expressAsyncHandler((req,res)=>{
     }
 }))
 
+
+
+userApp.put('/delete-from-cart/:username', expressAsyncHandler(async (req, res) => {
+    const usersCollection = req.app.get('usersCollection');
+    const username = req.params.username;
+    const proObj = req.body;
+    const id = proObj.id;
+
+    // Remove item from user's cart based on ID using updateOne and $pull
+    const result = await usersCollection.updateOne(
+        { username: username },
+        { $pull: { products: { id: id } } }
+    );
+    console.log(result);
+
+    if (result.modifiedCount > 0) {
+        res.status(200).json({ message: "Item deleted successfully" });
+    } else {
+        res.status(400).json({ message: "Item not found in cart" });
+    }
+}));
+
+
+//get latest
+
+userApp.get('/cart-items/:username',expressAsyncHandler(async(req,res)=>
+    {
+        let usersCollection=req.app.get('usersCollection')
+        let user_=req.params.username
+        //get cart
+        let user = await usersCollection.findOne({username:user_},{products:1})
+        //send response
+        res.send({message:"sended user cart full",payload:user})
+    }))
+    
+
+
+
+
 userApp.put('/add-to-cart/:username',expressAsyncHandler(async(req,res)=>{
     let usersCollection=req.app.get('usersCollection')
     let user=req.params.username
@@ -106,5 +147,19 @@ userApp.put('/add-to-cart/:username',expressAsyncHandler(async(req,res)=>{
 
 }))
 
+
+
+
+// get latest cart
+
+userApp.get('/cart/:username',expressAsyncHandler(async(req,res)=>
+{
+    let usersCollection=req.app.get('usersCollection')
+    let user_=req.params.username
+    //get cart
+    let user = await usersCollection.findOne({username:user_},{products:1})
+    //send response
+    res.send({message:"sended user cart full",payload:user})
+}))
 
 module.exports=userApp;

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { CiEdit } from "react-icons/ci";
 function Userprofile() {
   let {currentUser}=useContext(userLoginContext)
+  console.log(currentUser)
   let navigate = useNavigate()
   function onedit()
   {
@@ -20,8 +21,10 @@ function Userprofile() {
     <div className='text-end text-end p-3'>
       <img src={currentUser.profileImage} width='75px' alt="" className='rounded-circle' />
       <p className='fs-3'>{currentUser.username}
+       
       <CiEdit  className='text-warning fs-2 ' onClick={onedit}/>
       </p>
+      
     </div>
     <div>
     <ul className='nav fs-5 p-3 justify-content-around my-2'>
