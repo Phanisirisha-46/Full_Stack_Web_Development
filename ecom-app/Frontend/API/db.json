@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "ac81",
+      "username": "vvsv",
+      "email": "veerankisiri@gmail.com",
+      "password": "12345678",
+      "mobile": "1234567890",
+      "profile": "vps"
+    },
+    {
+      "id": "1324",
+      "username": "vps",
+      "email": "vps@gmail.com",
+      "password": "12345678",
+      "mobile": "999999999999",
+      "profile": "sdn"
+    },
+    {
+      "id": "dabb",
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "12345678",
+      "mobile": "1234567890",
+      "profile": "abc"
+    }
+  ]
+}

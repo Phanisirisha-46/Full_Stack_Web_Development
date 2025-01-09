@@ -1,0 +1,8 @@
+.product-image {
+    height: 300px; 
+    object-fit: contain;
+    object-position: center;
+}
+.textJustify{
+    text-align: justify;
+}
