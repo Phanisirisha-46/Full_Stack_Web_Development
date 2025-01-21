@@ -118,7 +118,7 @@ I am here to start a fresh technology - FSWD
 <a href="https://amazon-sites.netlify.app" target="_blank">Site-React</a>
 <br>
 <br>
-<a href="https://articles-app1.netlify.app" target="_blank">Articles-React</a>
+<a href="https://articles-app1.netlify.app" target="_blank">Articles React</a>
 <br>
 <br>
 <a href="https://child-parent.netlify.app" target="_blank">Child-Parent-Relation</a>
